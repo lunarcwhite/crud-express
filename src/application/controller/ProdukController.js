@@ -106,6 +106,15 @@ function destroy(req, res) {
         });
     }
 }
+function uploadGambar(req, res){
+    const metaData = req.file;
+    const originalName = metaData.originalname;
+    const oldPath = metaData.path;
+    fs.renameSync(oldPath, path.resolve(`public/images/produk/${originalName}`));
+    res.send({
+        message: 'Gambar Terkirim',
+    });
+}
 
 module.exports = {
     fetch,
@@ -113,4 +122,5 @@ module.exports = {
     show,
     update,
     destroy,
+    uploadGambar
 };
