@@ -69,12 +69,12 @@ function update(req, res) {
     let id = req.query.id;
     let data = getOne(id);
     let allData = getData();
-    data = {
-        ...data,
-        ...bodyData
-    };
     const index = allData.findIndex((d) => d.id == id);
-    if (index !== undefined && data) {
+    if (index == true || data !== undefined) {
+        data = {
+            ...data,
+            ...bodyData
+        };
         allData[index] = data;
         writeData(allData);
         res.send({

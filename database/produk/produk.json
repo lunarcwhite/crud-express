@@ -1,1 +1,21 @@
-[{"id":"6","nama":"Semen","harga":"9000","barcode":"5032443"},{"id":"7","nama":"Semen","harga":"9000","barcode":"5032443"},{"id":"8","nama":"Semen","harga":"9000","barcode":"5032443"},{"id":"10","nama":"p edit","harga":"9000","barcode":"5032443"}]
+[{
+    "id": "6",
+    "nama": "xixixi",
+    "harga": "1",
+    "barcode": "5032443"
+}, {
+    "id": "7",
+    "nama": "p edit semen",
+    "harga": "9000",
+    "barcode": "5032443"
+}, {
+    "id": "8",
+    "nama": ":V:v:b",
+    "harga": "10",
+    "barcode": "5032443"
+}, {
+    "id": "10",
+    "nama": "p edit",
+    "harga": "9000",
+    "barcode": "5032443"
+}]
